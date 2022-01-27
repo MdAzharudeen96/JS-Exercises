@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  align-items: center;
+  background: rgb(0, 54, 136);
+  background: linear-gradient(
+    169deg,
+    rgba(0, 54, 136, 1) 0%,
+    rgba(145, 198, 208, 1) 60%
+  );
+  font-family: "Josefin Sans", sans-serif;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  color: rgb(235, 95, 95);
+  margin: 10px;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 6rem;
+}
+
+.input-container {
+  background-color: white;
+  border: 1px solid rgb(74, 173, 190);
+  border-radius: 1rem;
+  padding: 1rem 3rem;
+  /* padding: 5rem 10rem; */
+  box-shadow: 0rem 0 1rem 0.5rem rgb(0 0 0 / 20%);
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  background-color: whitesmoke;
+  border: 1px solid rgb(34, 34, 34);
+  border-radius: 0.5rem;
+  height: 150px;
+  width: 400px;
+  text-align: justify;
+}
+
+.button {
+  margin-top: 20px;
+  background: rgb(89, 183, 214);
+  border: 1px solid rgb(91, 102, 105);
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+.button:hover {
+  background-color: rgb(136, 210, 236);
+}
+
+.hidden {
+  display: none;
+}
+
+.thead {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: white;
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding: 5px;
+}
+
+.table-content {
+  display: block;
+  overflow: scroll;
+  height: 300px;
+}
+
+table,
+td,
+th {
+  background-color: white;
+  border: 1px solid black;
+  /* table-layout: fixed; */
+  width: 20rem;
+  text-align: center;
+}
+
+table {
+  /* border: 1px solid black; */
+  border-collapse: collapse;
+  height: 20rem;
+}
