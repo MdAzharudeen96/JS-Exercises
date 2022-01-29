@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 10px;
+  background: rgb(250, 231, 122);
+}
+
+.container {
+  width: 450px;
+  padding: 30px;
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: 0px 0 15px 15px rgb(0 0 0 / 20%);
+  align-items: center;
+}
+
+#star-rating {
+  display: flex;
+  width: 350px;
+  flex-direction: row-reverse;
+}
+
+.star {
+  margin-left: 10px;
+}
+
+.star:before {
+  content: "\f005";
+  font-family: fontAwesome;
+  font-size: 60px;
+  position: absolute;
+  display: block;
+  color: #aaa;
+}
+
+.star:after {
+  content: "\f005";
+  font-family: fontAwesome;
+  position: relative;
+  font-size: 60px;
+  color: gold;
+  opacity: 0;
+}
+
+.rating {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.rating {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+}
+
+.star:hover:after,
+.star:hover ~ .star:after,
+.star.checked::after,
+.star.checked ~ .star:after {
+  opacity: 1;
+}
