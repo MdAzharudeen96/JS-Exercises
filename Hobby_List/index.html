@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Find Hobbyists</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>HOBBIES LIST</header>
+            <div class="main-container">
+                <div class="sub-container">
+                    <div class="success hidden">
+
+                    </div>
+                    <div class="add-hobby">
+                        <p>Enter Name</p>
+                        <input type="text" class="name" placeholder="Enter Name">
+                    </div>
+                    <div class="add-hobby">
+                        <p>Hobby 1</p>
+                        <input type="text" class="hobby-one" placeholder="Add your Hobby">
+                    </div>
+                    <div class="add-hobby">
+                        <p>Hobby 2</p>
+                        <input type="text" class="hobby-two" placeholder="Add your Hobby">
+                    </div>
+                    <div class="add-hobby">
+                        <p>Hobby 3</p>
+                        <input type="text" class="hobby-three" placeholder="Add your Hobby">
+                    </div>
+                    <button type="submit" onclick="addHobbyists()" class="button addhobbyist">Add Hobbyists</button>
+                </div>
+                <div class="sub-container container-left">
+                    <div>
+                        <p>Enter Hobby</p>
+                        <input type="text" placeholder="Enter Hobby" class="hobby-input">
+                        <button type="submit" onclick="findAllHobbyists()" class="button gethobbyist">Get Hobbyists</button>
+                    </div>
+                    <div class="result">
+                        <ul class="hobbyists-list">
+                            <p>Please give Hobby as Input</p>
+                        </ul>
+                    </div>
+                    <button class="clear">Clear</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
