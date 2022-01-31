@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 10px;
+  background: #5dd1ff;
+}
+
+.container {
+  width: 30rem;
+  padding: 30px;
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+}
+
+.container header {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.container-top {
+  background-color: whitesmoke;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0rem 0 0.5rem 0.2em rgb(0 0 0 / 20%);
+}
+
+.container-bottom {
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0rem 0 0.5rem 0.2em rgb(0 0 0 / 20%);
+  margin-top: 1rem;
+}
+
+.new-date div {
+  display: flex;
+}
+
+.new-date div p {
+  font-size: 20px;
+}
+
+.note {
+  margin-top: 5px;
+  margin-left: 8rem;
+  font-size: 11px;
+  color: red;
+}
+
+.new-date .date {
+  margin-left: 1rem;
+  width: 10rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.drop-list {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.drop-list .select-box {
+  display: flex;
+  width: 160px;
+  height: 45px;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: center;
+  border: 1px solid #999;
+}
+
+.drop-list select {
+  font-size: 16px;
+  border: none;
+  background: none;
+}
+
+.drop-list .icon {
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+.drop-list p {
+  font-size: 20px;
+}
+
+button {
+  height: 40px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  background: #17a1d8;
+  transition: 0.3s ease;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+button:hover {
+  background: #3abbee;
+}
+
+.select-box {
+  width: auto;
+  font-size: 16px;
+  background: none;
+  margin: 0;
+}
+
+.result-container p {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 16px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}

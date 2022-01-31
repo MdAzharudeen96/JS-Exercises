@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Destination Date</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" href="style.css" />
+        <!-- <script src="script.js"></script> -->
+    </head>
+    <body>
+        <div class="container">
+            <header>Destination Date</header>
+            <div class="container-top">
+                <div class="new-date">
+                    <div>
+                        <p>Enter Date</p>
+                        <input type="date" placeholder="dd/mm/yyyy" class="date">
+                    </div>
+                    <p class="note">*Please choose future date</p>
+                </div>
+                <div class="drop-list">
+                    <div class="departure">
+                        <p>Departure From</p>
+                        <div class="select-box">
+                            <select class="dept-select">
+                                <!-- JavaScript -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+                    <div class="destination">
+                        <p>Destination To</p>
+                        <div class="select-box">
+                            <select class="dest-select">
+                                <!-- JavaScript -->
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" onclick="getTempDest()">Get Direction</button>
+            </div>
+            <div class="container-bottom hidden">
+                <h5>Destination Result</h5>
+                <div class="result-container">
+
+                </div>
+                <button type="submit" class="clear">Clear</button>
+            </div>       
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
